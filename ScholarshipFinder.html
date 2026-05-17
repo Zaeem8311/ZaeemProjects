@@ -9,7 +9,7 @@
 <body>
   <div class="page-shell">
     <nav class="navbar">
-      <h1>Galactic Projects</h1>
+      <h1>Personal Projects</h1>
       <div class="nav-links">
         <a href="MainPage.html">Home</a>
         <a href="ScholarshipFinder.html">Scholarship Finder</a>
@@ -18,17 +18,72 @@
     </nav>
 
     <section class="section">
-      <div class="card">
+      <article class="card">
+        <p class="eyebrow">AI scholarship matching</p>
         <h3>Scholarship Finder</h3>
-        <p>This page is under construction. Soon it will help you discover scholarships with a clean search interface and cosmic guidance.</p>
-      </div>
-      <div class="card">
-        <h3>What’s next?</h3>
-        <p>Build the search form, connect scholarship data, and add filters for fields of study, deadlines, and eligibility.</p>
+        <p>
+          Built a scholarship discovery and application-assistance system combining large-scale web scraping, structured
+          data management, AI matching, document parsing, and essay-generation workflows.
+        </p>
+      </article>
+
+      <div class="cards project-details">
+        <article class="card">
+          <h3>Web Scraping Pipeline</h3>
+          <p>
+            Created custom scrapers for sources such as Scholarships.com and Scholarships360, extracting scholarship
+            titles, descriptions, award amounts, deadlines, eligibility requirements, application links, source URLs, and
+            category metadata into normalized JSON datasets.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Data Management</h3>
+          <p>
+            Grouped scholarships by major, career interest, grade level, location, demographic eligibility, financial
+            need, merit criteria, essay requirement, deadline window, and award type so the AI can search targeted
+            categories before ranking matches.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Vector Matching</h3>
+          <p>
+            Used vector embeddings of scholarship keywords, descriptions, eligibility rules, and user profile details so
+            the system can find semantically similar scholarships instead of relying only on exact keyword overlap.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Agent Tools</h3>
+          <p>
+            Designed tool-based AI workflows for scholarship_search, category_filter, eligibility_checker,
+            document_parser, document_search, and essay_drafter to connect scholarship retrieval with application
+            support.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Document Parsing</h3>
+          <p>
+            Uploaded PDFs, resumes, transcripts, essays, and activity lists are parsed into clean text, split into
+            meaningful chunks, converted into embeddings, and indexed in a vector store for fast retrieval from large
+            documents.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>RAG Essay Support</h3>
+          <p>
+            The chatbot uses retrieval-augmented generation to repurpose uploaded documents into tailored scholarship
+            essays, retrieving relevant examples, checking eligibility context, and drafting focused responses aligned
+            with each prompt.
+          </p>
+        </article>
       </div>
     </section>
 
-    <footer>© 2026 Personal Projects · Navigate using the links above.</footer>
+    <footer>&copy; 2026 Personal Projects &middot; Navigate using the links above.</footer>
   </div>
 </body>
 </html>

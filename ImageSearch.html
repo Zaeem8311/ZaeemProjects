@@ -9,7 +9,7 @@
 <body>
   <div class="page-shell">
     <nav class="navbar">
-      <h1>Galactic Projects</h1>
+      <h1>Personal Projects</h1>
       <div class="nav-links">
         <a href="MainPage.html">Home</a>
         <a href="ScholarshipFinder.html">Scholarship Finder</a>
@@ -18,17 +18,79 @@
     </nav>
 
     <section class="section">
-      <div class="card">
-        <h3>Image Search</h3>
-        <p>This page is under construction. It will become a beautiful tool for searching and previewing images from space-inspired datasets.</p>
-      </div>
-      <div class="card">
-        <h3>Coming soon</h3>
-        <p>Later, we’ll add live search, thumbnails, and responsive previews so the page feels fast and polished.</p>
+      <article class="card image-search-demo">
+        <div class="demo-copy">
+          <p class="eyebrow">Fashion visual search</p>
+          <h3>Image Search</h3>
+          <p>
+            A visual-search system that lets users upload or capture a clothing image and find visually similar products
+            across a scraped multi-retailer catalog.
+          </p>
+        </div>
+        <div class="demo-video-wrap" aria-label="Image Search project demo">
+          <video class="demo-video" autoplay loop muted playsinline preload="metadata">
+            <source src="assets/image-search-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+      <div class="cards project-details">
+        <article class="card">
+          <h3>Retail Catalog</h3>
+          <p>
+            Built custom scrapers for Amazon, Zara, ASOS, SHEIN, Macy's, and Temu, collecting product titles, image URLs,
+            prices, metadata, and category information into JSON, CSV, and NDJSON datasets.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Fashion Embeddings</h3>
+          <p>
+            Trained and fine-tuned CLIP-based fashion embeddings with product images and DeepFashion-style clothing data which is a dataset of 80,000 labeled clothes images. I curated an algorithm using
+            contrastive similar/dissimilar image pairs so the model learned fashion-specific similarity.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Fast Retrieval</h3>
+          <p>
+            Converted catalog images into 512-dimensional vector embeddings with the fine-tuned CLIP model and indexed them with FAISS for fast nearest-neighbor search
+            across thousands of products.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Improved Matching</h3>
+          <p>
+            Combined CLIP semantic embeddings with color histograms and shape/HOG features using weighted fusion, coarse
+            retrieval, reranking, category filters, and evaluation stages to improve result quality.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Backend + Mobile Flow</h3>
+          <p>
+            Built Flask APIs, serialized FAISS indexes, product metadata, unified retailer catalogs, and an iOS/mobile
+            workflow that sends a camera image to the backend and returns closest matches with similarity scores.
+          </p>
+        </article>
+        <article class="card">
+          <h3>AWS Deployment</h3>
+          <p>
+            Deployed the Python ML stack as an AWS-backed backend service so the iOS app could keep model inference
+            off-device and meet Apple platform requirements. Provisioned an Ubuntu EC2 t3.large instance, configured the
+            fashion-search API environment, installed Python dependencies, and hosted the FAISS/vector-search service
+            behind a public domain for network image-search requests.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Cloud Architecture</h3>
+          <p>
+            Used S3 buckets to organize product images, vectorized catalog artifacts, model/index files, and deployment
+            resources separately from the application runtime. The REST API loaded serialized FAISS indexes and product
+            metadata, accepted client image uploads, generated embeddings, searched the indexed catalog, and returned the
+            closest fashion products.
+          </p>
+        </article>
       </div>
     </section>
 
-    <footer>© 2026 Personal Projects · Navigate using the links above.</footer>
+    <footer>&copy; 2026 Personal Projects &middot; Navigate using the links above.</footer>
   </div>
 </body>
 </html>
