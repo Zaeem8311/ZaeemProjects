@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Search | Personal Projects</title>
+  <title>Photo Finder | Personal Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
       <h1>Personal Projects</h1>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="ScholarshipFinder.html">Scholarship Finder</a>
-        <a href="ImageSearch.html">Image Search</a>
+        <a href="ScholarshipFinder.html">Scholarship Copilot</a>
+        <a href="ImageSearch.html">Photo Finder</a>
       </div>
     </nav>
 
@@ -21,13 +21,12 @@
       <article class="card image-search-demo">
         <div class="demo-copy">
           <p class="eyebrow">Fashion visual search</p>
-          <h3>Image Search</h3>
+          <h3>Why Photo Finder</h3>
           <p>
-            A visual-search system that lets users upload or capture a clothing image and find visually similar products
-            across a scraped multi-retailer catalog.
+            Finding affordable clothes from images of luxurious clothing found online can require hours of scrolling through different clothing retailers. I built a visual search system that allows users to upload an image of a clothing item and find similar products across multiple retailers. I built a custom web scraper to create a large dataset of fashion product images and metadata, trained a CLIP-based model to create fashion-specific embeddings, indexed the embeddings with FAISS for fast retrieval, and built an iOS workflow that allows users to take pictures of clothing items and find similar products across multiple retailers.
           </p>
         </div>
-        <div class="demo-video-wrap" aria-label="Image Search project demo">
+        <div class="demo-video-wrap" aria-label="Photo Finder project demo">
           <video class="demo-video" autoplay loop muted playsinline preload="metadata">
             <source src="assets/image-search-demo.mp4" type="video/mp4">
           </video>
@@ -52,7 +51,7 @@
           <h3>Fast Retrieval</h3>
           <p>
             Converted catalog images into 512-dimensional vector embeddings with the fine-tuned CLIP model and indexed them with FAISS for fast nearest-neighbor search
-            across thousands of products.
+            across tens of thousands of products.
           </p>
         </article>
         <article class="card">

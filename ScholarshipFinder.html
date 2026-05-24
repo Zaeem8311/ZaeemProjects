@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scholarship Finder | Personal Projects</title>
+  <title>Scholarship Copilot | Personal Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,20 +12,31 @@
       <h1>Personal Projects</h1>
       <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="ScholarshipFinder.html">Scholarship Finder</a>
-        <a href="ImageSearch.html">Image Search</a>
+        <a href="ScholarshipFinder.html">Scholarship Copilot</a>
+        <a href="ImageSearch.html">Photo Finder</a>
       </div>
     </nav>
 
     <section class="section">
-      <article class="card">
-        <p class="eyebrow">AI scholarship matching</p>
-        <h3>Scholarship Finder</h3>
-        <p>
-          Built a scholarship discovery and application-assistance system combining large-scale web scraping, structured
-          data management, AI matching, document parsing, and essay-generation workflows.
-        </p>
+      <article class="card project-demo">
+        <div class="demo-copy">
+          <p class="eyebrow">AI scholarship matching</p>
+          <h3>Why Scholarship Copilot</h3>
+          <p>
+            The scholarship application process is often very overwhelming with millions of scholarships available but no easy way to find the ones that are the best fit for your unique profile and needs. Major scholarship search platforms require the user to enter extensive information many of which is not neccessary and leads to a process filled with friction for the user. I built scholarship copilot as an easy way for students to upload information about themselves using their college application which already has all the relevant information and then I leveraged AI in order to help them easily find matches to scholarships. I also added an RAG AI agent which is able to create personalized essays from essays the user has previously written.
+          </p>
+          <div class="project-link">
+            <a class="button" href="https://scholarship-apply-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">Open Scholarship Apply</a>
+          </div>
+        </div>
+        <div class="project-demo-media" aria-label="Scholarship Copilot project demo">
+          <video class="project-demo-animation" autoplay loop muted playsinline preload="metadata">
+            <source src="assets/scholarship-copilot-demo.mp4" type="video/mp4">
+          </video>
+        </div>
       </article>
+
+      
 
       <div class="cards project-details">
         <article class="card">
@@ -78,6 +89,15 @@
             The chatbot uses retrieval-augmented generation to repurpose uploaded documents into tailored scholarship
             essays, retrieving relevant examples, checking eligibility context, and drafting focused responses aligned
             with each prompt.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Vercel and Supabase Stack</h3>
+          <p>
+            Deployed the Next.js application on Vercel with secure server-side environment handling, production health
+            checks, and audit logging. Supabase provides the PostgreSQL database and storage layer, with Prisma ORM
+            managing scholarship records, student profiles, documents, matches, and application activity.
           </p>
         </article>
       </div>
